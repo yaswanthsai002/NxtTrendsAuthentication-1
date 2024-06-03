@@ -1,0 +1,97 @@
+.lg-home-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 75%;
+  gap: 0 1rem;
+  padding: 1rem;
+}
+
+.sm-home-container {
+  display: none;
+}
+
+.lg-description-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem 0;
+  width: 50%;
+}
+
+.heading {
+  font-size: 3rem;
+  color: #1e293b;
+}
+
+.description {
+  font-size: 1.125rem;
+  color: #475569;
+  text-align: justify;
+}
+
+.shop-now-btn {
+  border: none;
+  outline: none;
+  color: #ffffff;
+  background-color: #0b69ff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+}
+
+.lg-image-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 50%;
+}
+
+.clothes-img {
+  width: 450px;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 768px) {
+  .lg-home-container {
+    display: none;
+  }
+
+  .sm-home-container {
+    display: block;
+    width: 75%;
+    padding: 1rem;
+  }
+
+  .sm-description-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem 0;
+  }
+
+  .heading {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .clothes-img {
+    width: 250px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .lg-home-container {
+    width: 90%;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+
+  .clothes-img {
+    width: 300px;
+  }
+}

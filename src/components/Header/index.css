@@ -1,0 +1,95 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  width: 75%;
+}
+
+.website-logo {
+  width: 200px;
+  object-fit: contain;
+}
+
+.lg-nav-items-list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 0 2rem;
+}
+
+.sm-nav-items-list {
+  display: none;
+}
+
+.nav-link {
+  text-decoration: none;
+}
+
+.nav-item {
+  list-style-type: none;
+  font-size: 1.25rem;
+  color: #475569;
+}
+
+.lg-logout-btn {
+  border: none;
+  outline: none;
+  color: #ffffff;
+  background-color: #0b69ff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.md-logout-btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: transparent;
+  display: none;
+}
+
+.logout-logo {
+  width: 2rem;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 768px) {
+  .website-logo {
+    width: 150px;
+  }
+
+  .lg-logout-btn,
+  .lg:not(:last-child) {
+    display: none;
+  }
+
+  .md-logout-btn {
+    display: block;
+  }
+
+  .sm-nav-items-list {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 0 2rem;
+    padding: 1rem;
+    background-color: #e6f6ff;
+    width: 75%;
+  }
+
+  .home-logo,
+  .products-logo,
+  .cart-logo {
+    width: 2rem;
+    object-fit: contain;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .navbar {
+    width: 90%;
+  }
+}
